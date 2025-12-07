@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>seMedos — VR Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/Logosemfundo.png" class="brand-img">
+        <span class="brand-title">seMedos</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Início</a>
+        <a href="#explicacao">Sobre</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#testemunhos">Testemunhos</a>
+        <a href="#contactos">Contactos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero reveal">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title">Transformamos Medo<br>em Coragem.</h1>
+        <p class="hero-sub">Uma experiência VR criada para diminuir a ansiedade infantil em contextos médicos.</p>
+        <button class="btn-primary">Explorar Projeto</button>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <img src="img/Logosemfundo.png" class="hero-img" id="heroImg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--O que é o seMedos-->
+  <section id="explicacao" class="hero reveal">
+    <div class="container hero-grid">
+
+      <div class="hero-left">
+        <h1 class="hero-title">O que é o seMedos?</h1>
+        <p class="hero-sub">
+          O seMedos é uma experiência VR construída para ajudar crianças a compreenderem o ambiente médico de forma
+          calma, previsível e segura.
+        </p>
+        <p class="hero-sub">
+          Através da simulação com peluches virtuais e objetos médicos animados, a criança aprende sem pressão.
+        </p>
+      </div>
+
+      <div class="visual">
+        <img src="img/LogoC.gif.gif" alt="Logotipo animado seMedos" class="logo-animado">
+      </div>
+
+    </div>
+  </section>
+
+  <!--Objetivos-->
+
+  <section id="objetivos" class="section objetivos reveal">
+    <div class="container">
+      <h2 class="section-title center">Objetivos</h2>
+
+      <div class="flashcards-grid">
+
+        <!-- CARD 1 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">💛</span>
+              <h3 class="flash-title">Reduzir Ansiedade</h3>
+            </div>
+            <div class="flash-back">
+              Diminuir o medo e a ansiedade associados às consultas médicas.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">🧸</span>
+              <h3 class="flash-title">Empatia</h3>
+            </div>
+            <div class="flash-back">
+              Promover empatia ao permitir que a criança ajude peluches virtuais.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">🩺</span>
+              <h3 class="flash-title">Exploração Segura</h3>
+            </div>
+            <div class="flash-back">
+              Permitir que a criança explore objetos médicos de forma positiva.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">🏅</span>
+              <h3 class="flash-title">Autoconfiança</h3>
+            </div>
+            <div class="flash-back">
+              Reforçar autoconfiança com recompensas e feedback positivo.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">👩‍⚕️</span>
+              <h3 class="flash-title">Apoio Médico</h3>
+            </div>
+            <div class="flash-back">
+              Mostrar o médico como uma figura de apoio e segurança.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="flashcard">
+          <div class="flash-inner">
+            <div class="flash-front">
+              <span class="icon">🌐</span>
+              <h3 class="flash-title">VR na Saúde</h3>
+            </div>
+            <div class="flash-back">
+              Demonstrar o potencial da Realidade Virtual na saúde infantil.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--impacto-->
+  <section id="impacto" class="section impacto reveal">
+    <div class="container impact-box">
+      <h2 class="section-title center">Impacto</h2>
+      <div class="counter" id="countKids">0</div>
+      <p class="impact-label">Crianças impactadas</p>
+    </div>
+  </section>
+
+
+  <!-- Testemunhos -->
+  <section id="testemunhos" class="testimonials-section"></section>
+  <h2 class="section-title center">Testemunhos</h2>
+
+  <div class="yellow-background">
+    <button class="testimonial-btn prev">&#10094;</button>
+
+    <div class="testimonials-wrapper" id="Testemunhos">
+      <!-- Cada grupo de 3 cartões dentro de um container -->
+      <div class="testimonial-group active">
+        <div class="testimonial-card">
+          <img src="/IMG/bea.jpg" alt="Beatriz Pires">
+          <h5>Beatriz Pires</h5>
+          <p>Aplicação top top top! Super intuitiva e divertida.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="/IMG/sara_foto.jpeg" alt="Sara Almeida">
+          <h5>Sara Almeida</h5>
+          <p>Decidi entrar porque queria algo diferente, com impacto real e ligado ao futuro.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="/IMG/inês.png" alt="Inês Barbosa">
+          <h5>Inês Barbosa</h5>
+          <p>Sem dúvida temos ajudado muitas crianças a aprender e se divertir.</p>
+        </div>
+      </div>
+
+      <div class="testimonial-group">
+        <div class="testimonial-card">
+          <img src="img/menina1.webp" alt="Julia Silva">
+          <h5>Julia Silva</h5>
+          <p>Adorei a experiência! Facilita muito o aprendizado das crianças.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="img/meninp.png" alt="Miguel Costa">
+          <h5>Miguel Costa</h5>
+          <p>Um projeto inovador e educativo. Recomendo a todos os professores.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="img/menina 3.png" alt="Ana Pereira">
+          <h5>Ana Pereira</h5>
+          <p>As crianças adoraram! Muito intuitivo e divertido.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="testimonial-btn next">&#10095;</button>
+  </div>
+  </section>
+
+
+  <!--Perguntas Frequentes-->
+
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="faq-grid">
+        <!-- Lado esquerdo -->
+        <div class="faq-title">
+          <h2>FAQ`S</h2>
+        </div>
+
+
+        <!-- Lado direito -->
+        <div class="faq-questions">
+          <div class="faq-item">
+            <button class="faq-question">
+              Qual a faixa etária recomendada para o projeto?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              O projeto é recomendado para crianças entre 4 e 10 anos.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Em que dispositivos funciona?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              Funciona nos óculos de Realidade Virtual compatíveis com Unity (recomendados os Meta Quest).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Precisa de internet para jogar?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              Não, o projeto funciona totalmente offline.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              É seguro para crianças?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              Sim. O ambiente é calmo, colorido e sem estímulos agressivos.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Onde pode ser utilizado?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-answer">
+              Pode ser usado em escolas, hospitais, clínicas pediátricas ou consultas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipa -->
+  <section>
+    <div class="container">
+      <h2 class="section-title center">A nossa equipa</h2>
+
+      <div class="testimony-container">
+
+        <!-- CARD 1 -->
+        <div class="testimony-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/IMG/bea.jpg" alt="Foto estudante">
+              <h5>Beatriz Pires</h5>
+            </div>
+            <div class="card-back">
+              <p>O que acha da seMedos?<br>Aplicação top top top</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="testimony-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/IMG/sara_foto.jpeg" alt="Foto estudante">
+              <h5>Sara Almeida</h5>
+            </div>
+            <div class="card-back">
+              <p>O que a motivou a entrar neste projeto?<br>
+                Decidi entrar porque queria algo diferente, com impacto real e ligado ao futuro.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="testimony-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="/IMG/inês.png" alt="Foto estudante">
+              <h5>Inês Barbosa</h5>
+            </div>
+            <div class="card-back">
+              <p>Acha que a empresa tem sucesso?<br>Sem dúvida temos ajudado muitas crianças</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Dúvidas-->
+  <section class="contactos section-padding" id="contactos">
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <h2 class="text-center mb-4">Contacto-nos!</h2>
+          <div style="text-align: center;">
+          </div>
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensagem:</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning" center>Submeter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p></p>
+
+  <!-- CONTACTOS -->
+  <section id="contactos" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Saiba Mais</h2>
+      </div>
+
+      <div class="card contact-card reveal">
+        <p>Fala connosco para demonstração, teste ou colaboração.</p>
+        <p><strong>Email:</strong> semedos.projecto@gmail.com</p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@seMedos_Oficial</a></p>
+        <p><strong>Curso:</strong> Licenciatura em Saúde Digital - Escola Superior de Saúde</p>
+        <a href="#" class="btn btn-link text-white">Topo ▲<a href="#Topo"></a>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      seMedos · Projeto · Saúde Digital · 2025
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
