@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>seMedos — VR Experience</title>
+  <title>seMedos, VR Experience</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- HEADER FIXO -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="img/Logosemfundo.png" class="brand-img">
+        <img src="img/Logosemfundo.png" class="brand-img" alt="Logotipo seMedos">
         <span class="brand-title">seMedos</span>
       </div>
       <nav class="nav">
@@ -28,45 +29,68 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section id="hero" class="hero reveal">
     <div class="container hero-grid">
       <div class="hero-left">
         <h1 class="hero-title">Transformamos Medo<br>em Coragem.</h1>
-        <p class="hero-sub">Uma experiência VR criada para diminuir a ansiedade infantil em contextos médicos.</p>
-        <button class="btn-primary">Explorar Projeto</button>
+        <p class="hero-sub">
+          Uma experiência VR criada para diminuir a ansiedade infantil em contextos médicos.
+        </p>
+        <button class="btn-primary" onclick="document.querySelector('#explicacao').scrollIntoView({behavior:'smooth'})">
+          Explorar Projeto
+        </button>
       </div>
       <div class="hero-right">
-        <div class="hero-img-wrap">
-          <img src="img/Logosemfundo.png" class="hero-img" id="heroImg">
+        <div class="visual">
+          <!-- GIF do logo animado -->
+          <img src="img/Design sem nome.gif" alt="Logotipo animado seMedos" class="logo-animado">
         </div>
       </div>
     </div>
   </section>
 
-  <!--O que é o seMedos-->
-  <section id="explicacao" class="hero reveal">
-    <div class="container hero-grid">
+  <!-- O QUE É O SEMEDOS -->
+  <section id="explicacao" class="section reveal">
+    <div class="container explain-grid">
 
-      <div class="hero-left">
-        <h1 class="hero-title">O que é o seMedos?</h1>
+      <!-- TEXTO -->
+      <div class="text">
+        <h2 class="section-title">O que é o seMedos?</h2>
         <p class="hero-sub">
-          O seMedos é uma experiência VR construída para ajudar crianças a compreenderem o ambiente médico de forma
-          calma, previsível e segura.
+          O <strong>seMedos</strong> é uma experiência em Realidade Virtual construída para ajudar crianças a
+          compreenderem o ambiente médico de forma calma, previsível e segura.
         </p>
         <p class="hero-sub">
-          Através da simulação com peluches virtuais e objetos médicos animados, a criança aprende sem pressão.
+          Através da simulação com peluches virtuais e objetos médicos animados, a criança aprende sem pressão,
+          assumindo o papel de <strong>“ajudante do médico”</strong>.
         </p>
       </div>
 
-      <div class="visual">
-        <img src="img/LogoC.gif.gif" alt="Logotipo animado seMedos" class="logo-animado">
+      <!-- GALERIA INTERATIVA -->
+      <div class="gallery-wrap">
+        <div class="gallery-main">
+          <img id="mainImage" src="img/Captura de ecrã 2025-12-09 212229.png" alt="Imagem seMedos principal">
+        </div>
+
+        <div class="gallery-thumbs">
+          <img class="thumb" src="img/Captura de ecrã 2025-12-09 212229.png" alt="Thumb 1">
+          <img class="thumb" src="img/Captura de ecrã 2025-12-09 212306.png" alt="Thumb 2">
+          <img class="thumb" src="img/Captura de ecrã 2025-12-09 213051.png" alt="Thumb 3">
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!--Objetivos-->
 
+
+
+
+
+
+
+  <!-- OBJETIVOS EM FLASHCARDS -->
   <section id="objetivos" class="section objetivos reveal">
     <div class="container">
       <h2 class="section-title center">Objetivos</h2>
@@ -155,7 +179,7 @@
     </div>
   </section>
 
-  <!--impacto-->
+  <!-- IMPACTO (CONTADOR ANIMADO) -->
   <section id="impacto" class="section impacto reveal">
     <div class="container impact-box">
       <h2 class="section-title center">Impacto</h2>
@@ -164,68 +188,71 @@
     </div>
   </section>
 
+  <!-- TESTEMUNHOS (CARROSSEL) -->
+  <section id="testemunhos" class="testimonials-section section reveal">
+    <div class="container">
+      <h2 class="section-title center">Testemunhos</h2>
 
-  <!-- Testemunhos -->
-  <section id="testemunhos" class="testimonials-section"></section>
-  <h2 class="section-title center">Testemunhos</h2>
+      <div class="yellow-background">
+        <button class="testimonial-btn prev">&#10094;</button>
 
-  <div class="yellow-background">
-    <button class="testimonial-btn prev">&#10094;</button>
+        <div class="testimonials-wrapper" id="Testemunhos">
 
-    <div class="testimonials-wrapper" id="Testemunhos">
-      <!-- Cada grupo de 3 cartões dentro de um container -->
-      <div class="testimonial-group active">
-        <div class="testimonial-card">
-          <img src="/IMG/bea.jpg" alt="Beatriz Pires">
-          <h5>Beatriz Pires</h5>
-          <p>Aplicação top top top! Super intuitiva e divertida.</p>
-        </div>
-        <div class="testimonial-card">
-          <img src="/IMG/sara_foto.jpeg" alt="Sara Almeida">
-          <h5>Sara Almeida</h5>
-          <p>Decidi entrar porque queria algo diferente, com impacto real e ligado ao futuro.</p>
-        </div>
-        <div class="testimonial-card">
-          <img src="/IMG/inês.png" alt="Inês Barbosa">
-          <h5>Inês Barbosa</h5>
-          <p>Sem dúvida temos ajudado muitas crianças a aprender e se divertir.</p>
-        </div>
-      </div>
+          <!-- GRUPO 1 -->
+          <div class="testimonial-group active">
+            <div class="testimonial-card">
+              <img src="/IMG/bea.jpg" alt="Beatriz Pires">
+              <h5>Beatriz Pires</h5>
+              <p>Aplicação top top top! Super intuitiva e divertida.</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="/IMG/sara_foto.jpeg" alt="Sara Almeida">
+              <h5>Sara Almeida</h5>
+              <p>Decidi entrar porque queria algo diferente, com impacto real e ligado ao futuro.</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="/IMG/inês.png" alt="Inês Barbosa">
+              <h5>Inês Barbosa</h5>
+              <p>Sem dúvida temos ajudado muitas crianças a aprender e a divertir-se.</p>
+            </div>
+          </div>
 
-      <div class="testimonial-group">
-        <div class="testimonial-card">
-          <img src="img/menina1.webp" alt="Julia Silva">
-          <h5>Julia Silva</h5>
-          <p>Adorei a experiência! Facilita muito o aprendizado das crianças.</p>
+          <!-- GRUPO 2 -->
+          <div class="testimonial-group">
+            <div class="testimonial-card">
+              <img src="img/menina1.webp" alt="Julia Silva">
+              <h5>Julia Silva</h5>
+              <p>Adorei a experiência! Facilita muito o aprendizado das crianças.</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="img/meninp.png" alt="Miguel Costa">
+              <h5>Miguel Costa</h5>
+              <p>Um projeto inovador e educativo. Recomendo a todos os professores.</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="img/menina 3.png" alt="Ana Pereira">
+              <h5>Ana Pereira</h5>
+              <p>As crianças adoraram! Muito intuitivo e divertido.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="testimonial-card">
-          <img src="img/meninp.png" alt="Miguel Costa">
-          <h5>Miguel Costa</h5>
-          <p>Um projeto inovador e educativo. Recomendo a todos os professores.</p>
-        </div>
-        <div class="testimonial-card">
-          <img src="img/menina 3.png" alt="Ana Pereira">
-          <h5>Ana Pereira</h5>
-          <p>As crianças adoraram! Muito intuitivo e divertido.</p>
-        </div>
+
+        <button class="testimonial-btn next">&#10095;</button>
       </div>
     </div>
-
-    <button class="testimonial-btn next">&#10095;</button>
-  </div>
   </section>
 
 
-  <!--Perguntas Frequentes-->
-
-  <section id="faq" class="faq-section">
+  <!-- FAQ -->
+  <section id="faq" class="faq-section section reveal">
     <div class="container">
       <div class="faq-grid">
         <!-- Lado esquerdo -->
         <div class="faq-title">
-          <h2>FAQ`S</h2>
+          <h2>FAQ's</h2>
+          <p>Dúvidas rápidas sobre o projeto seMedos.</p>
         </div>
-
 
         <!-- Lado direito -->
         <div class="faq-questions">
@@ -245,7 +272,7 @@
               <span class="faq-toggle">+</span>
             </button>
             <div class="faq-answer">
-              Funciona nos óculos de Realidade Virtual compatíveis com Unity (recomendados os Meta Quest).
+              Funciona em óculos de Realidade Virtual compatíveis com Unity (recomendados os Meta Quest).
             </div>
           </div>
 
@@ -283,8 +310,8 @@
     </div>
   </section>
 
-  <!-- Equipa -->
-  <section>
+  <!-- EQUIPA -->
+  <section id="equipa" class="section reveal">
     <div class="container">
       <h2 class="section-title center">A nossa equipa</h2>
 
@@ -296,9 +323,10 @@
             <div class="card-front">
               <img src="/IMG/bea.jpg" alt="Foto estudante">
               <h5>Beatriz Pires</h5>
+              <p>Aplicação top top top!</p>
             </div>
             <div class="card-back">
-              <p>O que acha da seMedos?<br>Aplicação top top top</p>
+              <p>O que acha da seMedos?<br>Aplicação top top top.</p>
             </div>
           </div>
         </div>
@@ -309,10 +337,11 @@
             <div class="card-front">
               <img src="/IMG/sara_foto.jpeg" alt="Foto estudante">
               <h5>Sara Almeida</h5>
+              <p>Impacto real e ligado ao futuro.</p>
             </div>
             <div class="card-back">
-              <p>O que a motivou a entrar neste projeto?<br>
-                Decidi entrar porque queria algo diferente, com impacto real e ligado ao futuro.
+              <p>O que a motivou a entrar?<br>
+                Queria algo diferente, com impacto real e ligado ao futuro.
               </p>
             </div>
           </div>
@@ -324,9 +353,12 @@
             <div class="card-front">
               <img src="/IMG/inês.png" alt="Foto estudante">
               <h5>Inês Barbosa</h5>
+              <p>Fazemos a diferença nas crianças.</p>
             </div>
             <div class="card-back">
-              <p>Acha que a empresa tem sucesso?<br>Sem dúvida temos ajudado muitas crianças</p>
+              <p>Acha que a empresa tem sucesso?<br>
+                Sem dúvida temos ajudado muitas crianças.
+              </p>
             </div>
           </div>
         </div>
@@ -335,51 +367,53 @@
     </div>
   </section>
 
-
-  <!--Dúvidas-->
-  <section class="contactos section-padding" id="contactos">
-    <div class="container mt-5 mb-5">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <h2 class="text-center mb-4">Contacto-nos!</h2>
-          <div style="text-align: center;">
-          </div>
-          <form action="#" method="post">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nome:</label>
-              <input type="text" class="form-control" id="name" name="name" required />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" name="email" required />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Mensagem:</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning" center>Submeter</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <p></p>
-
-  <!-- CONTACTOS -->
-  <section id="contactos" class="section contact-section">
+  <!-- CONTACTOS + FORMULÁRIO -->
+  <section id="contactos" class="contactos section">
     <div class="container">
-      <div class="section-header">
-        <h2>Saiba Mais</h2>
+      <h2 class="section-title center">Contacto-nos!</h2>
+      <p class="contactos-sub">
+        Fala connosco para demonstração, teste ou colaboração.
+      </p>
+
+      <!-- Formulário -->
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submeter</button>
+      </form>
+
+      <!-- Cartões de contacto rápido -->
+      <div class="contactos-cards">
+        <div class="contact-card">
+          <span class="contact-icon">📧</span>
+          <h4>Email</h4>
+          <p>semedos.projecto@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📸</span>
+          <h4>Instagram</h4>
+          <p>@seMedos_Oficial</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">🎓</span>
+          <h4>Curso</h4>
+          <p>Licenciatura em Saúde Digital<br>Escola Superior de Saúde</p>
+        </div>
       </div>
 
-      <div class="card contact-card reveal">
-        <p>Fala connosco para demonstração, teste ou colaboração.</p>
-        <p><strong>Email:</strong> semedos.projecto@gmail.com</p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@seMedos_Oficial</a></p>
-        <p><strong>Curso:</strong> Licenciatura em Saúde Digital - Escola Superior de Saúde</p>
-        <a href="#" class="btn btn-link text-white">Topo ▲<a href="#Topo"></a>
-        </a>
-      </div>
+      <a href="#hero" class="back-top-btn">↑ Voltar ao topo</a>
     </div>
   </section>
 
@@ -391,5 +425,9 @@
 
   <script src="script.js"></script>
 </body>
+
+
+
+
 
 </html>
